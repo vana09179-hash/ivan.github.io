@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renault Duster 2009 — 3D модель</title>
+<link rel="stylesheet" href="duster/duster.css">
+<script type="importmap">
+{ "imports": { "three": "./duster/vendor/three.module.min.js", "three/addons/": "./duster/vendor/" } }
+</script>
+</head>
+<body>
+<canvas id="view"></canvas>
+
+<header class="hud top">
+  <a class="back" href="index.html" aria-label="На главную">←</a>
+  <div>
+    <h1>Renault <b>Duster</b></h1>
+    <p>2009 · первое поколение · процедурная 3D‑модель</p>
+  </div>
+</header>
+
+<aside class="hud specs">
+  <dl>
+    <div><dt>Длина</dt><dd>4315 мм</dd></div>
+    <div><dt>Ширина</dt><dd>1822 мм</dd></div>
+    <div><dt>Высота</dt><dd>1625 мм</dd></div>
+    <div><dt>Колёсная база</dt><dd>2673 мм</dd></div>
+    <div><dt>Клиренс</dt><dd>205 мм</dd></div>
+    <div><dt>Шины</dt><dd>215/65 R16</dd></div>
+  </dl>
+</aside>
+
+<footer class="hud bottom">
+  <div class="row" id="colors" role="group" aria-label="Цвет кузова"></div>
+  <div class="row">
+    <button data-view="front34" class="on">3/4</button>
+    <button data-view="front">Спереди</button>
+    <button data-view="side">Сбоку</button>
+    <button data-view="rear">Сзади</button>
+    <button data-view="top">Сверху</button>
+    <button data-view="cabin">Салон</button>
+    <span class="sep"></span>
+    <button data-toggle="lights">Фары</button>
+    <button data-toggle="spin">Колёса</button>
+    <button data-toggle="rotate">Автоповорот</button>
+  </div>
+  <p class="hint">Вращение — перетаскивание · масштаб — колесо / щипок · сдвиг — правая кнопка</p>
+</footer>
+
+<div id="loader"><div class="ring"></div><span>Собираю автомобиль…</span></div>
+<script type="module" src="duster/main.js"></script>
+</body>
+</html>
